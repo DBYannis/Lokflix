@@ -13,7 +13,7 @@ body{
 .navbar{
     width: 100%;
     height: 50px;
-    background-color: black;
+    background-color: #151515;
     font-family: 'Sen', sans-serif;
 }
 
@@ -65,6 +65,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-right: 50px;
 }
 
 .profile-text-container{
@@ -77,6 +78,45 @@ body{
     border-radius: 50%;
     object-fit: cover;
 }
+
+
+.dropbtn {
+    background: none;
+    color: white;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #A8D998;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #A8D998;
+}
+
 
 .toggle{
     width: 40px;
@@ -107,7 +147,7 @@ body{
 .sidebar{
     width: 50px;
     height: 100%;
-    background-color: black;
+    background-color: #151515;
     position: fixed;
     top: 0;
     display: flex;
@@ -135,8 +175,17 @@ body{
 
 
 .featured-content{
+    border-radius: 20px;
     height: 50vh;
     padding: 50px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/wallpapersden.com_official-everything-everywhere-all-at-once-hd_1920x1080.jpg');
+}
+
+.featured-content-series{
+    border-radius: 20px;
+    height: 50vh;
+    padding: 50px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/bcs.jpg');
 }
 
 .fade {
@@ -206,12 +255,15 @@ body{
     
 }
 
+
+
+
+
 .movie-list-item:hover .movie-list-item-img{
     transform: scale(1.2);
     margin: 0 10px;
     opacity: 0.5;
 }
-
 
 .movie-list-item:hover .movie-list-item-button{
     opacity: 1;
@@ -279,6 +331,27 @@ body{
 .toggle-ball.active{
     background-color: white;
     transform: translateX(-20px);
+}
+
+.dropbtn.active{
+    color: black;
+}
+.featured-content.active{
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #ffffff), url('img/wallpapersden.com_official-everything-everywhere-all-at-once-hd_1920x1080.jpg');
+}
+
+
+.featured-content-series.active{
+    background: linear-gradient(to bottom, rgba(0,0,0,0), #ffffff), url('img/bcs.jpg');
+}
+
+.featured-desc.active{
+    color: #151515;
+    font-weight: bold;
+}
+
+.menu-link.active{
+    color: black;
 }
 
 @media only screen and (max-width: 940px){

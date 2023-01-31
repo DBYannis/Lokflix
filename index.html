@@ -9,6 +9,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Lokflix</title>
+    <link rel = "icon" href = 
+"img/couch-solid.svg" 
+        type = "image/x-icon">
 </head>
 <body>
     <div class="navbar">
@@ -34,10 +37,19 @@
                 </ul>
             </div>
             <div class="profile-container">
-                <img class="profile-picture" src="img/profile.jpg" alt="">
+                <img class="profile-picture" src="img/ProfilePic.jpg" alt="">
                 <div class="profile-text-container">
                     <span class="profile-text">Profile</span>
-                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown">
+                        <button class="dropbtn">
+                            <i class="fa-solid fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Mon compte</a>
+                            <a href="#">Paramètres</a>
+                            <a href="#">Se déconnecter</a>
+                        </div>
+                    </div>
                 </div>
                 <div class="toggle">
                     <i class="fa-solid fa-moon toggle-icon"></i>
@@ -49,18 +61,27 @@
     </div>
     <div class="sidebar">
         <i class="left-menu-icon fa-solid fa-magnifying-glass"></i>
-        <i class="left-menu-icon fa-solid fa-house"></i>
-        <i class="left-menu-icon fa-solid fa-user"></i>
-        <i class="left-menu-icon fa-solid fa-bookmark"></i>
-        <i class="left-menu-icon fa-solid fa-tv"></i>
-        <i class="left-menu-icon fa-solid fa-hourglass-start"></i>
-        <i class="left-menu-icon fa-solid fa-cart-shopping"></i>
+        <a class="menu-link" href="#home">
+            <i class="left-menu-icon fa-solid fa-house"></i>
+        </a>
+        <a class="menu-link" href="#favoris">
+            <i class="left-menu-icon fa-solid fa-bookmark"></i>
+        </a>
+        <a class="menu-link" href="#flims">
+            <i class="left-menu-icon fa-solid fa-video"></i>
+        </a>
+        <a class="menu-link" href="#series">
+            <i class="left-menu-icon fa-solid fa-tv"></i>
+        </a>
+        <a class="menu-link" href="#trends">
+            <i class="left-menu-icon fa-sharp fa-solid fa-arrow-trend-up"></i>
+        </a>
+        
         
     </div>
     <div class="container">
         <div id="home" class="content-container">
-            <div class="featured-content"
-            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/wallpapersden.com_official-everything-everywhere-all-at-once-hd_1920x1080.jpg');">
+            <div class="featured-content">
             <img class="featured-title" src="img/output-onlinepngtools.png" alt="">
             <p class="featured-desc">Evelyn Wang est à bout : elle ne comprend plus sa famille, son travail et croule sous les impôts… Soudain, elle se retrouve plongée dans le multivers, des mondes parallèles où elle explore toutes les vies qu’elle aurait pu mener.</p>
             <a href="https://www.canalplus.com/cinema/everything-everywhere-all-at-once/h/20326176_40099?autoplay=true&sc_openpartner=googlewatch" target="_blank" >
@@ -73,31 +94,45 @@
                     <div id="#films"class="movie-list">
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <a href="https://www.canalplus.com/cinema/her/h/3833219_50001?autoplay=true&sc_openpartner=googlewatch" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/Blade-runner-2049-pano.jpg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <a href="https://www.netflix.com/watch/80185760" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/hidden-figures-poster.jpg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <a href="https://www.disneyplus.com/fr-fr/movies/les-figures-de-lombre/2xa2YdiOJXQt" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/Jackie.jpg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.32b64c3c-97fe-8e0c-2f93-d4e20c21692c?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/Spiderman.jpg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <a href="https://www.disneyplus.com/fr-fr/movies/spider-man-new-generation/OtXRBHlsLLV9" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/le-chat-potte-2-la-derniere-quete.jpg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/dune.jpg" alt="">
+                            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.403b0f47-548d-4329-ade2-c5c961c8111f?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
                             <img class="movie-list-item-img" src="img/glass onion.jfif" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <a href="https://www.netflix.com/watch/81458416?source=35" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                     </div>
                     <i class="fa-solid fa-chevron-right arrow"></i>
@@ -108,39 +143,52 @@
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/BTTF.jpg" alt="">
+                            <a href="https://www.netflix.com/watch/60010110?source=35" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/Blade-runner-2049-pano.jpg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/LOTR.jpg" alt="">
+                            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.18874f28-ed2b-4235-a4ef-bd1f9af589cc?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/topgun.jpg" alt="">
+                            <a href="https://www.canalplus.com/cinema/top-gun-maverick/h/19597296_50001?autoplay=true&sc_openpartner=googlewatch" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/SW4.jpg" alt="">
+                            <a href="https://www.disneyplus.com/video/3e66f25f-9f6b-441f-ba80-d2eb0829b8ec?distributionPartner=google" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/justelafindumonde.jpg" alt="">
+                            <a href="https://www.netflix.com/watch/80115029?source=35" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/underthesilverlake.jpg" alt="">
+                            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.44b8bdc4-21ef-4a04-530e-91e4905ea3c0?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/nope.jpg" alt="">
+                            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.2faca68d-835d-4910-a666-a0edd907ae7f?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                     </div>
                     <i class="fa-solid fa-chevron-right arrow"></i>
                 </div>
             </div>
-            <div class="featured-content"
-            style="background: linear-gradient(to bottom, rgba(0,0,0,0), #151515), url('img/bcs.jpg');">
+            <div class="featured-content-series">
             <img class="featured-title" src="img/bsclogo.png" alt="">
             <p class="featured-desc">Ce spin-off de la série "Breaking Bad" suit la vie de Jimmy McGill avant qu'il ne prenne le pseudonyme de Saul Goodman et devienne l'avocat véreux de Walter White.</p>
             <a href="https://www.netflix.com/title/80021955" target="_blank" >
@@ -152,32 +200,46 @@
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/atlanta.png" alt="">
+                            <a href="https://www.canalplus.com/series/atlanta/h/15768026_50269" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
+                            <img class="movie-list-item-img" src="img/TheOfficeExperience.jpg" alt="">
+                            <a href="https://www.netflix.com/watch/70136120?source=35" target="_blank">
                             <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/GoT.jpg" alt="">
+                            <a href="https://tv.apple.com/fr/episode/lhiver-vient/umc.cmc.11q7jp45c84lp6d16zdhum6ul?action=playSmartEpisode" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/fargo-poster.jpg" alt="">
+                            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.26b4eae1-f7c0-d193-5c23-4cce4ad15868?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/Fleabag.jpg" alt="">
+                            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.64b55200-c545-6a79-0c43-e6246e9a15fd?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/malcolm-big.jpg" alt="">
+                            <a href="https://www.disneyplus.com/series/malcolm-in-the-middle/5mNQERYSP5YN?distributionPartner=google" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/parksandrec.jpg" alt="">
+                            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.dab038ab-af3e-1573-0860-fcd7c8ffd2c3?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                     </div>
                     <i class="fa-solid fa-chevron-right arrow"></i>
@@ -188,32 +250,46 @@
                 <div class="movie-list-wrapper">
                     <div class="movie-list">
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/TLOU.jpg" alt="">
+                            <a href="https://www.primevideo.com/dp/amzn1.dv.gti.814e7304-da1c-48a3-a7a9-add331ccf7a0?autoplay=0&ref_=atv_cf_strg_wb" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/star-wars-mandalorian.jpg" alt="">
+                            <a href="https://www.disneyplus.com/series/the-mandalorian/3jLIGMDYINqD?distributionPartner=google" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/strangerthings.webp" alt="">
+                            <a href="https://www.netflix.com/watch/80057281?source=35" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/you.webp" alt="">
+                            <a href="https://www.netflix.com/watch/80211991?source=35" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/b99.webp" alt="">
+                            <a href="https://www.netflix.com/watch/70281562?source=35" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/outlander.png" alt="">
+                            <a href="https://www.netflix.com/watch/70285581?source=35" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                         <div class="movie-list-item">
-                            <img class="movie-list-item-img" src="img/1.jpeg" alt="">
-                            <button class="movie-list-item-button">Regarder</button>
+                            <img class="movie-list-item-img" src="img/deadtome.jpg" alt="">
+                            <a href="https://www.netflix.com/watch/80219707?source=35" target="_blank">
+                                <button class="movie-list-item-button">Regarder</button>
+                            </a>
                         </div>
                     </div>
                     <i class="fa-solid fa-chevron-right arrow"></i>

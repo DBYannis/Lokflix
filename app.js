@@ -8,7 +8,7 @@ arrows.forEach((arrow,i) => {
         const ratio = Math.floor(window.innerWidth/270)
         clickCounter++;
         if(itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
-        movieList[i].style.transform = `translateX(${movieList[i].computedStyleMap().get("transform")[0].x.value -300}px)`
+        movieList[i].style.transform = `translateX(${movieList[i].computedStyleMap().get("transform")[0].x.value -400}px)`
         }else{
             movieList[i].style.transform = "translateX(0)"
             clickCounter = 0
@@ -20,7 +20,7 @@ arrows.forEach((arrow,i) => {
 //TOGGLE
 
 const ball = document.querySelector(".toggle-ball");
-const items = document.querySelectorAll(".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle");
+const items = document.querySelectorAll(".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle,.dropbtn,.featured-content,.featured-content-series,.featured-desc,.menu-link");
 
 ball.addEventListener("click", ()=>{
     items.forEach(items=>{
