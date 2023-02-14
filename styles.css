@@ -175,6 +175,8 @@ body{
 
 
 .featured-content{
+    display: grid;
+    grid-template-columns: 3fr 5fr 5fr;
     border-radius: 20px;
     height: 50vh;
     padding: 50px;
@@ -182,6 +184,8 @@ body{
 }
 
 .featured-content-series{
+    display: grid;
+    grid-template-columns: 3fr 5fr 5fr;
     border-radius: 20px;
     height: 50vh;
     padding: 50px;
@@ -200,13 +204,17 @@ body{
 
 .featured-title{
     width: 200px;
-    
+    margin-top: 50px;
 }
 
 .featured-desc{
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 20px;
     width: 500px;
+    height: 200px;
     color: lightgray;
-    margin: 30px 0;
+    margin: 100px 0 0 0;
+    padding: 20px;
     font-size: 26px;
     overflow: hidden;
 }
@@ -216,6 +224,9 @@ body{
     color: #151515;
     padding: 10px 20px;
     border-radius: 20px;
+    margin: 200px 0 0 100px;
+    width: 150px;
+    height: 50px;
     border: none;
     outline: none;
     font-weight: bold;
@@ -375,5 +386,12 @@ body{
 
     .profile-container{
         margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 1024) {
+    
+    .movie-list-container {
+        position: fixed;
     }
 }
